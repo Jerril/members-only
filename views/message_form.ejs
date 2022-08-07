@@ -1,0 +1,15 @@
+<%- include('partials/header') -%>
+    <h1 class="display-6 text-center">Enter your thoughts...</h1>
+
+    <form class="row g-3 px-5 form message-form" action="" method="POST">
+        <div class="col-12">
+            <input type="text" class="form-control" placeholder="Title" aria-label="Title">
+        </div>
+        <div class="col-12">
+            <textarea class="form-control" rows="3" placeholder="What's on your mind?"></textarea>
+        </div>
+        <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+    </form>
+    <%- include('partials/footer') -%>

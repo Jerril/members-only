@@ -1,8 +1,28 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+main h1 {
+    border: 1px soild #777;
+    width: 75%;
+    margin: 7rem auto 5rem auto;
 }
 
-a {
-  color: #00B7FF;
+@media screen and (min-width: 768px) {
+    main h1 {
+        width: 60%;
+    }
+}
+
+.form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.register-form {
+    margin: 5rem auto;
+}
+
+.login-form {
+    margin: 6rem auto 9rem auto;
+}
+
+.message-form {
+    margin-bottom: 7rem;
 }

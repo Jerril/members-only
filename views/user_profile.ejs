@@ -1,0 +1,30 @@
+<%- include('partials/header') -%>
+    <h1 class="display-6 text-center">Profile Settings</h1>
+
+    <form class="row g-3 px-5 form justify-content-start" action="" method="POST">
+        <!-- <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        </div> -->
+        <div class="col-auto">
+            <label for="joinClub" class="visually-hidden">Join club</label>
+            <input type="password" class="form-control" id="joinClub" placeholder="Enter secret code">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Join Club</button>
+        </div>
+    </form>
+    <form class="row g-3 px-5 form justify-content-start" action="" method="POST">
+        <!-- <div class="col-auto">
+          <label for="staticEmail2" class="visually-hidden">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+      </div> -->
+        <div class="col-auto">
+            <label for="becomeAdmin" class="visually-hidden">Become an admin</label>
+            <input type="password" class="form-control" id="becomeAdmin" placeholder="Enter secret code">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Become an admin</button>
+        </div>
+    </form>
+    <%- include('partials/footer') -%>

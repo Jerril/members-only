@@ -6,6 +6,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const messagesRouter = require('./routes/messages');
 
 const app = express();
 
@@ -24,15 +25,20 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use('/bootstrap', express.static(path.join(__dirname, '/node_modules/bootstrap/dist')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/messages', messagesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));
 });
+
+// Set app name
+app.locals.appName = "Exclusive Clubhouse";
 
 // error handler
 app.use(function(err, req, res, next) {

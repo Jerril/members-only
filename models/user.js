@@ -34,7 +34,7 @@ var UserSchema = new Schema({
         enum: ['regular', 'member']
     },
     is_admin: {
-        type: boolean,
+        type: Boolean,
         required: true,
         default: false,
     }
